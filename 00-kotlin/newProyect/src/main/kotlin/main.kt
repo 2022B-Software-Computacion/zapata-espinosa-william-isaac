@@ -22,7 +22,7 @@ fun manin(){
     //Sintaxis Duck typing
     val ejemploVariable = "Ejemplo"
     val edadEjemplo: Int = 12
-    ejemploVarible.trip()
+    //ejemploVarible.trip()
 
 
     // VARIABLE PRIMITIVAS
@@ -46,7 +46,7 @@ fun manin(){
 
 
     //SWITCH no existe
-    val estadoCivilWhen = 'S'
+/*    val estadoCivilWhen = 'S'
     when(estadoCivilWhen) {
         ("S") -> {
             print("Esta soltero")
@@ -58,9 +58,13 @@ fun manin(){
         }
         else -> print("No reconcidos")
 
-    }
+    }*/
 
-
+    val sumaUno = Suma(1,2)
+    sumaUno.sumar()
+    Suma.pi
+    Suma.elevarAlCuadrado(2)
+    Suma.historialSumas
 
     //void imprimirNombre(String nombre){}
     // Unit == void (java)
@@ -79,6 +83,92 @@ fun manin(){
             return sueldo * (100 / tasaEspecial)
         }else{
             return sueldo * (100 / tasaEspecial)
+        }
+    }
+
+}
+
+abstract class NumerosJava{
+    protected val numeroUno: Int
+    protected val numeroDos: Int
+
+
+    constructor(
+        uno: Int,
+        dos: Int
+    ){//Bloque cododigo constructor
+        this.numeroUno = uno
+        this.numeroDos = dos
+        print("Inicializado")
+    }
+}
+
+
+abstract class Numeros(// CONSTRUCTOR PRIMARIO
+    //uno: Int, // Parametro
+    //Public es obsional, por default es public
+    //var uno:Int
+   // public var uno: Int, // Propiedad de la clase publica
+
+    protected val numeroUno: Int,
+    protected val numeroDos: Int
+
+){
+    init{// BLoque de codigo constructor PRIMARIO
+        //this.numeroUno = uno ya no se hace
+        this.numeroUno
+        numeroDos// No es necesario utilizar this
+        print("Inicializado")
+    }
+
+}
+
+class Suma(// Constructor Primario
+    uno: Int,
+    dos: Int
+): Numeros(uno, dos){
+    init {// Bloque constructor primario
+        this.numeroUno
+        this.numeroDos
+    }
+
+    constructor(//Segundo contructor
+        uno: Int?,
+        dos: Int
+    ):this(//llamada constructor primario
+        if(uno == null) 0 else uno,
+        dos
+    )
+
+    constructor(//Segundo contructor
+        uno: Int,
+        dos: Int?
+    ):this(//llamada constructor primario
+        if(dos == null) 0 else dos,
+        uno
+    )
+
+    constructor(//Segundo contructor
+        uno: Int?,
+        dos: Int?
+    ):this(//llamada constructor primario
+        if(uno == null) 0 else uno,
+        if(dos == null) 0 else dos
+    )
+
+    public fun sumar(): Int{
+        return numeroUno + numeroDos
+    }
+
+    companion object{//Atributos y metodos "Compartidos" entre las instancias
+        val pi = 3.14
+        fun  elevarAlCuadrado(num: Int): Int {
+            return  num*num
+        }
+
+        val historialSumas = arrayListOf<Int>()
+        fun agregarHistorial(valorNuevoSum: Int){
+            historialSumas.add(valorNuevoSum)
         }
     }
 
