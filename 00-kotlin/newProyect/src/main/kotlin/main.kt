@@ -1,4 +1,5 @@
 import java.util.*
+import kotlin.collections.ArrayList
 
 // Main.kt
 fun manin(){
@@ -86,6 +87,57 @@ fun manin(){
         }
     }
 
+
+    //ARREGLOS
+
+    //Tipos de arreglos
+
+    ///Arregllo Estatico
+    val arregloEstatico: Array<Int> = arrayOf<Int>(1,2,3)
+    println(arregloEstatico)
+
+    //Arreglo Dinamico
+    val arregloDinamico: ArrayList<Int> = arrayListOf<Int>(1,2,3,4,5,6,7,8,9,10)
+    println(arregloDinamico)
+    arregloDinamico.add(11)
+    println(arregloDinamico)
+
+    //OPERADORES -> Sirven para los arreglos estáticos y dinamicos
+
+
+    //FOR EACH -> Unit
+    //Iterar un arreglo
+
+    val respuestaForEach: Unit = arregloDinamico
+        .forEach {
+            valorActual:Int -> println("Valor actual: ${valorActual}")
+        }
+
+    //Iterar un arrglo
+    arregloEstatico
+        .forEachIndexed { indice: Int, valorActual: Int ->
+            println("Valor ${valorActual} indice: ${indice}")
+        }
+    println(respuestaForEach)
+
+    //MAP Muta ek arreglo ( cambia el arreglo)
+    //1. Enviamos el nuevo  valor de la iteracion
+    //2. Nos devuelve es un nuevo arreglo con los valores modificados
+
+
+    val respuestaMap: List<Double> = arregloDinamico
+        .map{valorActual: Int ->
+            return@map valorActual.toDouble() + 100.00
+        }
+    println(respuestaMap)
+
+
+    val respuestaMapDos = arregloDinamico.map {it + 15}
+    // .map { valorActual: Int ->
+        // return@map valorActual + 15
+    //}
+
+    println(respuestaMapDos)
 }
 
 abstract class NumerosJava{
@@ -171,6 +223,11 @@ class Suma(// Constructor Primario
             historialSumas.add(valorNuevoSum)
         }
     }
+
+
+
+
+
 
 }
 
