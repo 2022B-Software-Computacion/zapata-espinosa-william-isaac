@@ -138,6 +138,41 @@ fun manin(){
     //}
 
     println(respuestaMapDos)
+
+    // OR AND
+    // OR -> ANY (ALGUNO CUMPLE?)
+    // AND -> ALL (TODOS CUMPLE)
+
+    val respuestaAny: Boolean = arregloDinamico
+        .any{
+            valorActual: Int ->
+            return@any (valorActual > 5)
+        }
+    println(respuestaAny)//true
+
+    val respuestaAll: Boolean = arregloDinamico
+        .all{
+            valorACtual: Int ->
+            return@all (valorACtual > 5)
+        }
+    println(respuestaAll) //false
+
+    //REDUCE -> VALOR ACUMULADO
+    // VALOR ACUMULADO = 0 (SIEMPRE 0 EN EL LENGUAJE KOTLIN
+    //[1,2,3,4,5] -> SUME TODOS LOS VALORES DEL ARRAY
+    //valorIteracion1 = valorEmpieza + 1 = 0+1 = 1 ->Iteracion 1
+    //valorIteracion2 = valorIteracion1 +2 = 1 + 2 = 3 -> Iteracion 2
+    //valorIteracion3 = valorIteracion2 +3 = 3+3 = 6 -> Iteracion3
+    //valorIteracion4 = valorIteracion3 + 4 = 6 +4 = 10 -> Iteracion4
+    //valorIteracion5 = valorIteracion4 +5 = 10 + 5 = 15 -> Iteracion5
+
+    val respuestaReduce : Int = arregloDinamico
+        .reduce {// acumulado = 0 -> SIEMPRE EMPIEZA en O
+            acumulado: Int, valorActual: Int ->
+            return@reducen (acumulado + valorActual)
+        }
+    print(respuestaReduce)
+
 }
 
 abstract class NumerosJava{
@@ -223,8 +258,6 @@ class Suma(// Constructor Primario
             historialSumas.add(valorNuevoSum)
         }
     }
-
-
 
 
 
