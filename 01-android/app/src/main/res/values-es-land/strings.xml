@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hola_mundo">Hola  se está cumpliendo la condición 3!</string>
+    <color name="color_font">#232035</color>
+    <color name="bcgk">#D1D3E1</color>
+</resources>
