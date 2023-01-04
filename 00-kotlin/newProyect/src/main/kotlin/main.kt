@@ -166,12 +166,12 @@ fun manin(){
     //valorIteracion4 = valorIteracion3 + 4 = 6 +4 = 10 -> Iteracion4
     //valorIteracion5 = valorIteracion4 +5 = 10 + 5 = 15 -> Iteracion5
 
-    val respuestaReduce : Int = arregloDinamico
+/*    val respuestaReduce : Int = arregloDinamico
         .reduce {// acumulado = 0 -> SIEMPRE EMPIEZA en O
             acumulado: Int, valorActual: Int ->
             return@reducen (acumulado + valorActual)
-        }
-    print(respuestaReduce)
+        }*/
+    //print(respuestaReduce)
 
 }
 
