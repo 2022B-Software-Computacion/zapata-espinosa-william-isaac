@@ -12,6 +12,10 @@ class BBaseDatosMemoria {
                 .add(
                     BEntrenador("Isaac", "b@b.com")
                 )
+            arregloBEntrenador
+                .add(
+                    BEntrenador("Juan", "c@b.com")
+                )
         }
     }
 }

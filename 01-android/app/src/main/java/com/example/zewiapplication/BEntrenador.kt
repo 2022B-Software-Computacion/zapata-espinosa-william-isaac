@@ -5,4 +5,7 @@ class BEntrenador(
     val description: String?
 ) {
 
+    override fun toString(): String {
+        return "${nombre} - ${description}"
+    }
 }
