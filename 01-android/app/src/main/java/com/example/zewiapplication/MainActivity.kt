@@ -84,6 +84,10 @@ class MainActivity : AppCompatActivity() {
         intentExplicito.putExtra("nombre", "William")
         intentExplicito.putExtra("apellido", "Zapata")
         intentExplicito.putExtra("edad", 23)
+        intentExplicito.putExtra(
+            "entrenadorPrincipal",
+            BEntrenador(1,"William", "Paleta")
+        )
         contenidoIntentExplicito.launch(intentExplicito)
     }
 
