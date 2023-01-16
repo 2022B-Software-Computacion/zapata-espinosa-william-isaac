@@ -1,0 +1,2 @@
+Hamburguesa de pollo,11,5.0,2000-01-02,true
+papas fritas,9,2.5,2001-02-03,true
