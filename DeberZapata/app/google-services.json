@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "238895093620",
+    "project_id": "deberzapata-f3097",
+    "storage_bucket": "deberzapata-f3097.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238895093620:android:38680ace5b9d1cfed1be21",
+        "android_client_info": {
+          "package_name": "com.example.deberzapata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "238895093620-hdcm3fc7ho6tp6koeqe5lpsh9a9cruf3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5gbC8i-rapDL4WWgqk2itKiOGF9OxeQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "238895093620-hdcm3fc7ho6tp6koeqe5lpsh9a9cruf3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
