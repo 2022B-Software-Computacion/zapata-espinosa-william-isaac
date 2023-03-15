@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "125220567469",
+    "project_id": "exameniibzapata",
+    "storage_bucket": "exameniibzapata.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125220567469:android:b4a76917f4bbdbe2934924",
+        "android_client_info": {
+          "package_name": "com.example.exameniib_zapata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125220567469-pirvdikubjah094knvu5t18dvrlbrf9l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMbGbcgy5StO0mbJmao5_y1F2l9v00VDE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125220567469-pirvdikubjah094knvu5t18dvrlbrf9l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

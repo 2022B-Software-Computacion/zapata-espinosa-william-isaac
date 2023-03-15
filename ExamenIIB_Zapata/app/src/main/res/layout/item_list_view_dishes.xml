@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitleNameDish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name of the Dish:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/tvTitleNameDishContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tani Sushi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleNameDish"/>
+        <TextView
+            android:id="@+id/tvTitleCreationDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Creation date:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleNameDishContent"/>
+        <TextView
+            android:id="@+id/tvTitleCreationDateContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2000-01-01"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleCreationDate"/>
+        <TextView
+            android:id="@+id/tvTitlePrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleCreationDateContent"/>
+        <TextView
+            android:id="@+id/tvTitlePriceContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitlePrice"/>
+        <TextView
+            android:id="@+id/tvTitleAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitlePriceContent"/>
+        <TextView
+            android:id="@+id/tvTitleAvailableDishContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleAvailable"/>
+
+        <Button
+            android:id="@+id/btnDishEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleAvailableDishContent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="64dp"/>
+
+        <Button
+            android:id="@+id/btnDishDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleAvailableDishContent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="64dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
